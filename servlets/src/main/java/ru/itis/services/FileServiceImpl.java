@@ -30,7 +30,7 @@ public class FileServiceImpl implements FilesService {
                 .build();
 
         try {
-            Files.copy(file, Paths.get("C://files" + fileInfo.getStorageFileName() + "." + fileInfo.getType().split("/")[1]));
+            Files.copy(file, Paths.get("C://files/" + fileInfo.getStorageFileName() + "." + fileInfo.getType().split("/")[1]));
             filesRepository.save(fileInfo);
         } catch (IOException e) {
             throw new IllegalStateException();

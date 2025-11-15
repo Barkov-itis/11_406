@@ -12,7 +12,7 @@ public class FilesRepositoryImpl implements FilesRepository {
 
     private DataSource dataSource;
 
-    private final static String SQL_INSERT = "insert into files(storage_file_name, original_file_name, type, size)" +
+    private final static String SQL_INSERT = "insert into file(storage_file_name, original_file_name, type, size)" +
                                         "values (?,?,?,?)";
 
     private final static String SQL_SELECT_BY_ID = "select * from file where id = ?";
