@@ -1,0 +1,12 @@
+POST http://localhost:8080/service
+Content-Type: application/json
+
+{
+  "name":"DONOR",
+  "cost": "0",
+  "date": "05-08-2001"
+}
+
+###
+
+GET http://localhost:8080/papers/service/search?page=1&size=2
