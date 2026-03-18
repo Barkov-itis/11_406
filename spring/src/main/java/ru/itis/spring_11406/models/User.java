@@ -18,6 +18,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long accountId;
+    private String name;
     private String email;
     private String password;
 
@@ -28,4 +29,5 @@ public class User {
     private List<Article> articles;
 
     private Role role;
+    private String confirmed;
 }
