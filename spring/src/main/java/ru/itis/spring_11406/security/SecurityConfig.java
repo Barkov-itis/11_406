@@ -36,13 +36,13 @@ public class SecurityConfig {
                         .invalidateHttpSession(true)
                         .deleteCookies("JSESSIONID")
                         .permitAll())
-//                .authorizeHttpRequests((request) -> request
-//                        .requestMatchers("/**").permitAll());
-                .authorizeHttpRequests((requests) -> requests
-                        .requestMatchers("/admin/**").hasAuthority("ADMIN")
-                        .requestMatchers("/signUp","/images/**", "/service/**", "/papers/**",
-                                "/css/**","/js/**",
-                                "/*.css","/*.js").permitAll().anyRequest().authenticated());
+                .authorizeHttpRequests((request) -> request
+                        .requestMatchers("/**").permitAll());
+//                .authorizeHttpRequests((requests) -> requests
+//                        .requestMatchers("/admin/**").hasAuthority("ADMIN")
+//                        .requestMatchers("/signUp","/images/**", "/service/**", "/papers/**",
+//                                "/css/**","/js/**",
+//                                "/*.css","/*.js").permitAll().anyRequest().authenticated());
         return http.build();
     }
 }
