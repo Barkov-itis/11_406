@@ -10,3 +10,27 @@ Content-Type: application/json
 ###
 
 GET http://localhost:8080/papers/service/search?page=1&size=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
