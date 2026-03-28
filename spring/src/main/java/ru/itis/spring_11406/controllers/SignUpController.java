@@ -1,11 +1,14 @@
 package ru.itis.spring_11406.controllers;
 
+import freemarker.template.TemplateException;
 import ru.itis.spring_11406.dto.UserForm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import ru.itis.spring_11406.services.SignUpService;
+
+import java.io.IOException;
 
 @Controller
 public class SignUpController {
@@ -19,7 +22,7 @@ public class SignUpController {
     }
 
     @PostMapping("/signUp")
-    public String signUp(UserForm form) {
+    public String signUp(UserForm form) throws TemplateException, IOException {
         signUpService.addUser(form);
         return "redirect:/signUp";
     }
