@@ -1,0 +1,2 @@
+
+[2026-04-11T09:25:06.741325600] Ошибка: User(accountId=7, name=jornbru`, email=fbnber@gmail.com, password=$2a$10$ca/R1AZzLfu3DJacqX5squI0jegUH6Ixqn5oxOn1b3XyQyZ0QOlNK, createdArticles=null, articles=null, role=ADMIN, confirmed=CONFIRMED, confirmCode=b429f5c9-c4dd-49c1-a0b5-2fb922e47924)
